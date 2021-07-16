@@ -80,5 +80,5 @@ console.log("O novo valor de b é", c)
 const numberA = prompt("Digite um número")
 const numberB = prompt ("Digite outro número")
 
-console.log ("A soma de",numberA,"+",numberB,"=",Number(numberA)+Number(numberB))
-console.log ("A multiplicação de",numberA,"X",numberB,"=",Number(numberA)*Number(numberB))
+console.log ("X = soma de",numberA,"+",numberB,", logo X =",Number(numberA)+Number(numberB))
+console.log ("Y = multiplicação de",numberA,"X",numberB,", logo Y =",Number(numberA)*Number(numberB))
