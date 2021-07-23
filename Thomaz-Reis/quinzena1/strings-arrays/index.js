@@ -1,7 +1,7 @@
 /// Exercícios de interpretação de código
 /// 1.  Indique todas as mensagens impressas no console, **SEM EXECUTAR o programa**.
+/* 
 
-   /*  ```jsx
     let array
     console.log('a. ', array) /// a. Undefined, visto que não foram definidos valores
 
@@ -19,25 +19,26 @@
 
     const valor = array[i+6]
     console.log('f. ', valor) /// f. 9 (i = 0 > posição 0 no array é 3 & valor = i + 6 > valor = 3 + 6)
-    ``` */
-/* 
+     */
+ 
 ///2. Leia o código abaixo com atenção 
 
-    
+   /*  
     const frase = prompt("Digite uma frase")
 
     console.log(frase.toUpperCase().replaceAll("A", "I"), frase.length)
     
 
-    Qual será o valor impresso no console se a entrada do usuário for: `"Subi num ônibus em Marrocos"`? /// Irá imprimir toda a frase em maiúsculo e substituindo todos os A por I, depois irá imprimir o comprimento da frase (com espaços): SUBI NUM ÔNIBUS EM MIRROCOS 27
- */
+    Qual será o valor impresso no console se a entrada do usuário for: `"Subi num ônibus em Marrocos"`? 
+    R: Irá imprimir toda a frase em maiúsculo e substituindo todos os A por I, depois irá imprimir o comprimento da frase (com espaços): SUBI NUM ÔNIBUS EM MIRROCOS 27
+  */
 
 ////     - **Exercícios de escrita de código**
-    /* 1. Faça um programa que pergunte ao usuário seu nome e seu e-mail. Em seguida, imprima na tela a seguinte mensagem:
+    /// 1. Faça um programa que pergunte ao usuário seu nome e seu e-mail. Em seguida, imprima na tela a seguinte mensagem:
 
-        O e-mail `emailDoUsuario` foi cadastrado com sucesso. Seja bem-vinda(o), `nomeDoUsuario`!
-    */
-/* 
+    ///  O e-mail `emailDoUsuario` foi cadastrado com sucesso. Seja bem-vinda(o), `nomeDoUsuario`!
+    
+ 
     const nomeDoUsuario = prompt("Digite um nome de usuário.")
     const emailDoUsuario = prompt("Digite seu email.")
 
@@ -59,7 +60,7 @@
     const escolha = prompt("Qual sua comida preferida?")
     favComidas[1]= escolha
     console.log("Essas são as minhas novas comidas preferidas: ",favComidas)
-/*  
+  
     ///3. Faça um programa, seguindo os passos:
     ///   a) Crie um array vazio e guarde-o em uma variável, chamada `listaDeTarefas`
     let listaDeTarefas = []
@@ -75,15 +76,15 @@
     ///    e) Remova da lista o item de índice que o usuário escolheu.
     listaDeTarefas.splice(escolheTarefa,1)
     ///    f) Imprima o array na tela
-    console.log(listaDeTarefas) */
+    console.log(listaDeTarefas) 
   
-    ////Os primeiros dias de treinamento são sempre os mais difíceis
-   /// DESAFIOS 
+
+   /// ***DESAFIOS***
    /// 1. Receba uma frase e retorne um array onde cada elemento é uma das palavras da frase, ignorando os espaços
-/* const frase = prompt ("Digite uma frase")
+ const frase = prompt ("Digite uma frase")
 var fraseConcatenada = frase.split(' ')
 
-console.log(fraseConcatenada) */
+console.log(fraseConcatenada) 
 
    /// 2. Dado o array `["Banana", "Morango", "Abacaxi", "Laranja", "Ameixa"]`, faça um programa que acha o índice da palavra Abacaxi e imprime tanto o índice quanto o tamanho do array
 let meuArray = ["Banana", "Morango", "Abacaxi", "Laranja", "Ameixa"]
