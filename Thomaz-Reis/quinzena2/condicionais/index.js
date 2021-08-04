@@ -1,5 +1,5 @@
-/* 
-Exercícios de interpretação de código
+ 
+/* Exercícios de interpretação de código
 Tente responder os exercícios dessa seção sem executar o código. Se ficar muito difícil, pode rodar no seu computador **para analisar e pensar sobre o resultado.** 
 
 1. Leia o código abaixo:
@@ -75,7 +75,7 @@ R.: Digitando o número 10:  Esse número passou no teste
     Digitando o número -10 não traria retorno.
     c) Haverá algum erro no console? Justifique usando os conceitos de bloco ou escopo.
 R.: Não há erro, o número digitado (-10) está fora do escopo (números maiores que 0).
- */
+  */
 
 
 ///Exercícios de escrita de código
@@ -87,15 +87,15 @@ R.: Não há erro, o número digitado (-10) está fora do escopo (números maior
 
 ///    c) Agora veja se essa idade do usuário corresponde à idade mínima que permite dirigir. Se sim, imprima no console `"Você pode dirigir"`, caso contrário, imprima `"Você não pode dirigir."`
 
-/* let idadeUsuario = Number(prompt("Qual sua idade?"))
+ let idadeUsuario = Number(prompt("Qual sua idade?"))
 let idadeMinimaParaDirigir = 18
 if (idadeUsuario >= idadeMinimaParaDirigir) {
     console.log("Você pode dirigir")
-} else {console.log("Você não pode dirigir.")} */
+} else {console.log("Você não pode dirigir.")} 
 
 ///2. Agora faça um programa que verifica que turno do dia um aluno estuda. Peça para digitar **M** (matutino) ou **V** (Vespertino) ou **N** (Noturno). Imprima no console a mensagem "Bom Dia!", "Boa Tarde!" ou "Boa Noite!". Utilize o bloco `if/else`
 
-/* let turnoDoAluno = prompt("Em qual turno você estuda? Digite M (matutino) ou V (Vespertino) ou N (Noturno)")
+ let turnoDoAluno = prompt("Em qual turno você estuda? Digite M (matutino) ou V (Vespertino) ou N (Noturno)")
 if (turnoDoAluno === "M") {
     console.log("Bom dia!")
 }
@@ -105,11 +105,11 @@ else if (turnoDoAluno === "V") {
 else if (turnoDoAluno === "N") {
     console.log("Boa Noite!")
 }
- */
+ 
 
 ///3. Repita o exercício anterior, mas utilizando a estrutura de `switch case` agora.
 
-/* let turnoDoAluno = prompt("Em qual turno você estuda? Digite M (matutino) ou V (Vespertino) ou N (Noturno)")
+ let turnoDoAluno = prompt("Em qual turno você estuda? Digite M (matutino) ou V (Vespertino) ou N (Noturno)")
 switch (turnoDoAluno) {
     case "M":
         console.log("Bom dia!")
@@ -121,11 +121,11 @@ switch (turnoDoAluno) {
         console.log("Boa Noite!")
         break
 }
- */
+ 
 
 ///4. Considere a situação: você vai ao cinema com um amigo ou amiga, porém ele/ela só assistirá a um filme com você se ele for do gênero fantasia **e** se o ingresso está abaixo de 15 reais. Faça um código que pergunta ao usuário qual o gênero de filme que vão assistir e outra pergunta sobre o preço do ingresso, então verifique se seu amigo ou amiga vai topar assistir o filme. Caso positivo, imprima no console a mensagem: `"Bom filme!"`, caso contrário, imprima `"Escolha outro filme :("`
 
-/* const generosFilmes = ["Fantasia", "Drama", "Romance", "Comédia"]
+ const generosFilmes = ["Fantasia", "Drama", "Romance", "Comédia"]
 
 let generoEscolhido = prompt(`Escolha um gênero de filme: ${generosFilmes}`)
 
@@ -136,14 +136,14 @@ let precoFilme = Number(prompt("Qual o valor do ingresso?"))
 if ((generoEscolhido == generosFilmes[0]) && (precoFilme < 15)) {
     console.log("Bom filme!")
 }
-else {console.log("Escolha outro filme :(")} */
+else {console.log("Escolha outro filme :(")} 
 
 
 
 ///DESAFIOS
 ///1. Modifique o código do exercício 4 de escrita de código para, antes de imprimir a mensagem "Bom filme!", pergunte ao usuário, pelo prompt qual lanchinho ele vai comprar (pipoca, chocolate, doces, etc) e imprima no console as mensagens "Bom filme!" e "Aproveite o seu [LANCHINHO]", trocando [LANCHINHO] pelo que o usuário colocou no input.
 
-/* const generosFilmes = ["Fantasia", "Drama", "Romance", "Comédia"]
+ const generosFilmes = ["Fantasia", "Drama", "Romance", "Comédia"]
 
 let generoEscolhido = prompt(`Escolha um gênero de filme: ${generosFilmes}`)
 
@@ -156,7 +156,7 @@ if ((generoEscolhido == generosFilmes[0]) && (precoFilme < 15)) {
     console.log("Bom filme!")
     console.log(`Aproveite o seu ${lanchinho}`)
 }
-else {console.log("Escolha outro filme :(")}  */
+else {console.log("Escolha outro filme :(")}  
 
 ///2. Você foi contratado para criar um sistema de vendas de ingressos de jogos de um estádio de futebol. Para esta compra, o usuário deve fornecer algumas informações:
 ///    - Nome completo;
