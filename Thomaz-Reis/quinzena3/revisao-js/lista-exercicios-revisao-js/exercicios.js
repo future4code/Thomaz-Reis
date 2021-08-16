@@ -272,7 +272,7 @@ function retornaPessoasNaoAutorizadas(pessoas) {
  
 // EXERCÍCIO 19A
 function ordenaPorNome(consultasNome) {
-  ////const ordenarAlfabetica = consultasNome.filter((ordemAlfabetica, indice, array) => {
+  /* const ordenarAlfabetica = consultasNome.filter((ordemAlfabetica, indice, array) => {
      ordemAlfabetica = consultasNome.nome////.toString();
     for (let i = 0; i < ordemAlfabetica; i++) {
         for (let j = 0; j < ordemAlfabetica; j++) {
@@ -300,12 +300,12 @@ function ordenaPorNome(consultasNome) {
             }
         }
         console.log(consultasNome)
-        return consultasNome;
+        return consultasNome; */
 }
 
 // EXERCÍCIO 19B
  function ordenaPorData(consultasData) {
-  ///const ordenarPorData = consultasData.filter((ordemData, indice, array) => {
+  /* const ordenarPorData = consultasData.filter((ordemData, indice, array) => {
    let ordemData = consultasData.dataDaConsulta;
     for (let i = 0; i < ordemData; i++) {
         for (let j = 0; j < ordemData; j++) {
@@ -317,7 +317,7 @@ function ordenaPorNome(consultasNome) {
         }
     }
     ////console.log()
-    return consultasData;
+    return consultasData; */
 } 
 
 // EXERCÍCIO 20
