@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <title>Inserir nova venda</title>
+</head>
+<body>
+    <div>
+        <p class="nome-loja">Empório Capila</p>
+    </div>
+    <div class="links-pages">
+        <a href="index.html">Página Inicial</a><a>...</a>
+        <a href="ctrl-estoque.html">Controle de Estoque</a><a>...</a>
+        <a href="add-produto.html">Adicionar Produto</a><a>...</a>
+        <a href="funcionarios.html">Funcionários</a><a>...</a>
+        <a href="sobre-nos.html">Sobre Nós</a>
+    </div>
+    <p>Inserir nova venda</p>
+<form id="frm_get" action="historico-vendas.php" target="_blank" method="POST" >
+    <table>
+    <tr>
+    <td width= 30px>Cliente: </td> <td><input type="text" id="txtf_nome" required="required" name="Cliente" /></td>
+    </tr> <tr>
+    <td width= 30px>Produto: </td> <td><input type="text" id="txtf_produto" required="required" name="Produto" /></td>
+    </tr> <tr>
+    <td width= 30px>Quantidade: </td> <td><input type="text" id="txtf_qtd" required="required" name="Quantidade"/> </td>
+    </tr> 
+    <tr><td  width= 30px> Forma de pagamento: </td><td width= 60px><select required="required" name="Pagamento">
+            <option value="Dinheiro">Dinheiro</option>
+            <option value="Cartão">Cartão</option>
+    </tr></td>
+    <td><input type="submit" value="Cadastrar venda" /></td>
+    </tr>
+    </table>
+    </form> 
+</body>
+</html>
