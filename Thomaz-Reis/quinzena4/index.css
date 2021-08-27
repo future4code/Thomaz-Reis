@@ -55,10 +55,11 @@ body{
     display: flex;
     flex-direction: column;
     max-height: 100%;
+    max-width: 35vw;
     align-items: left;
     background-color: #f2d0e0;
     float: left;
-    flex:1;
+    flex-grow: 1;
     height: 92vh;
     box-sizing: padding-box;
 }
@@ -73,7 +74,7 @@ body{
 
 .corpo{
     display: grid;
-    max-width: 70vw;
+    max-width: 65vw;
     padding: 20px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
