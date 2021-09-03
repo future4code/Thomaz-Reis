@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    max-height: 100%;
+    overflow: hidden;
+}
+
+.menu-lateral img{
+    width: 20px;
+    height: 20px;
+    padding-right: 5px;
+}
+
+header img{
+    width: 20px;
+    height: 20px;
+    padding-right: 10px;
+}
+
+img{
+    max-width: 1fr;
+    max-height: 210px;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: mediumvioletred;
+    box-sizing: padding-box;
+}
+footer{
+    background-color: mediumvioletred;
+    clear: both;
+    padding: 10px;
+    position: relative;
+    text-align: center;
+}
+
+.main{
+    display: block;
+}
+
+body{
+    max-width: 100%;
+    border-collapse: collapse;
+    box-sizing: padding-box;
+}
+
+.menu-lateral{
+    display: flex;
+    flex-direction: column;
+    max-height: 100%;
+    max-width: 35vw;
+    align-items: left;
+    background-color: #f2d0e0;
+    float: left;
+    flex-grow: 1;
+    height: 92vh;
+    box-sizing: padding-box;
+}
+
+.menu-interior{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.corpo{
+    display: grid;
+    max-width: 65vw;
+    padding: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px 20px;
+    float: left;
+    flex-grow: 3;
+
+}
+
+#bolo{
+    display: flex;
+    padding: 5px;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    box-shadow: 6px 8px 5px darkgray;
+    max-width: 1fr;
+    max-height: 1fr;   
+}
+
+.corpo>#bolo>#foto-bolo.img{
+    width: 50px;
+}
+
+#titulo{
+    font-size: larger;
+    font-weight:bold;
+}
+
+#descricao{
+    font-size: small;
+    font-weight:bold;
+    word-break: normal;
+}
