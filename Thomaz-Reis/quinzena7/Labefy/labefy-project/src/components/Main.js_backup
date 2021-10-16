@@ -1,0 +1,45 @@
+import React from "react";
+import styled from "styled-components";
+import Playlists from "./AddPlaylists";
+import AddTracks from "./TracksToPlaylist";
+import Header from "./Header";
+import ListaPlaylists from "./ListaPlaylists";
+
+export default class Main extends React.Component{
+    
+    state = {
+        estaLogado: false
+      };
+    
+      renderizaTelaCorreta = () =>{
+        if (this.state.estaLogado) {
+        return (
+            <Playlists fazerLogout={this.fazerLogout}/>
+            );
+          } else {
+              return (
+              <PerguntaOpcoes fazerLogin={this.fazerLogin} />
+            )
+        }
+      }
+      
+        fazerLogin = () => {
+        this.setState({estaLogado: true})
+        }
+    
+        fazerLogout = () => {
+        this.setState({estaLogado: false})
+        }
+
+    render() {
+        return (
+            <div>
+            {this.renderizaTelaCorreta()}
+            </div>
+            
+        )
+            
+        
+    }
+
+}
