@@ -4,45 +4,54 @@ import styled from "styled-components";
 import axios from "axios";
 
 const MatchContainer = styled.div``;
-const MatchDetails = styled.div``;
-const MatchPhoto = styled.div``;
-const MatchName = styled.div``;
-const MatchAge = styled.div``;
-const MatchBio = styled.div``;
+const CardMatch = styled.div``;
+const CardPhoto = styled.div`
+  img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 50%;
+    object-fit: fit;
+    object-position: 50% 0;
+    padding: 5px;
+  }
+`;
+const CardName = styled.h3``;
 
 const url = "https://us-central1-missao-newton.cloudfunctions.net/astroMatch/";
 
-export default function Getdata() {
-
+export default function GetMatches() {
   const [matches, setMatches] = useState([]);
 
+  const getMatches = async () => {
+    try {
+      await axios.get(`${url}/thomaz/matches`).then((response) => {
+        setMatches(response.data.matches);
+        console.log(matches);
+      });
+    } catch (err) {
+      console.log("Erro", err.data);
+    }
+  };
   useEffect(() => {
-    const getMatches = async () => {
-      try {
-        const response = await axios
-        .get(
-          `${url}/thomaz/matches`
-        )
-        .then((response) => {
-          setMatches(response.data.matches);
-        });
-      } catch (err) {
-        console.log("Erro", err.data);
-      }
-    };
     getMatches();
   }, [matches]);
 
   return (
-    <div>
-      <MatchContainer>
-        <MatchPhoto>{photo && <img src={photo} alt={MatchName} />}</MatchPhoto>
-        <MatchDetails>
-          <MatchName>{name}</MatchName>
-          <MatchAge>{age} years</MatchAge>
-        </MatchDetails>
-        <MatchBio>{bio && <p>{bio}</p>}</MatchBio>
-      </MatchContainer>
-    </div>
+    <MatchContainer>
+      {matches.map((match) => {
+        return (
+          <CardMatch key={match.id}>
+            <CardPhoto alt="photo">
+              <img src={match.photo} />
+            </CardPhoto>
+            <CardName id="name">{match.name}</CardName>
+          </CardMatch>
+        );
+      })}
+      {/* <MatchPhoto>
+          {photo && <img src={photo} alt={MatchName} />}
+        </MatchPhoto>
+        <MatchName>{name}</MatchName> */}
+    </MatchContainer>
   );
 }
