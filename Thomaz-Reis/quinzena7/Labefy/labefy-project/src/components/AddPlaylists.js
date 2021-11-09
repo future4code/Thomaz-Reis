@@ -192,8 +192,7 @@ export default class AddPlaylists extends React.Component {
               name={playlist.name}
               playlistId={playlist.id}
             >
-              {playlist.name} :
-              {playlist.id}
+              {playlist.name}
               <Buttons>
                 <ButtonSelect onClick={() => this.props.updatePlaylistID(playlist.id)}>
                   ۞
